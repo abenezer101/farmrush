@@ -286,7 +286,7 @@ private readonly TRACTOR_SPEED = 350; // 250 → 350
 
 ## 📚 Documentation
 
-- **PROJECT_SUMMARY.md** - Complete project overview and roadmap
+- [**PROJECT_SUMMARY.md**](/PROJECT_SUMMARY.md) - Complete project overview and roadmap
 
 
 ## 🤝 Contributing

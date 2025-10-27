@@ -20,7 +20,7 @@
     "items": [
       {
         "label": "Create a new post",
-        "description": "Farm Rush",
+        "description": "🌽 Real-time multiplayer farming game. Harvest corn, beat competitors, climb the leaderboard!",
         "location": "subreddit",
         "forUserType": "moderator",
         "endpoint": "/internal/menu/post-create"

@@ -190,21 +190,18 @@ farmrush/
 
 ## Success Criteria Met
 
-✅ Launchable as Reddit Interactive Post
-✅ Phaser visuals render correctly
-✅ Core gameplay loop functional
-✅ Responsive design implemented
-✅ Clean, documented codebase
-✅ Build process working
-✅ TypeScript type safety
+* ✅ Launchable as Reddit Interactive Post
+* ✅ Phaser visuals render correctly
+* ✅ Core gameplay loop functional
+* ✅ Responsive design implemented
+* ✅ Clean, documented codebase
+* ✅ Build process working
+* ✅ TypeScript type safety
 
 ## Documentation Provided
 
 1. **README.md**: Overview, installation, features
-2. **QUICKSTART.md**: 5-minute setup guide
-3. **GAMEPLAY.md**: How to play, controls, strategy
-4. **DEVELOPMENT.md**: Architecture, adding features
-5. **PROJECT_SUMMARY.md**: This comprehensive summary
+2. **PROJECT_SUMMARY.md**: This comprehensive summary
 
 ## Next Steps for Developer
 
@@ -214,18 +211,22 @@ farmrush/
 3. Test on mobile device
 4. Deploy to test subreddit
 
-### Short-term
-1. Add sound effects
-2. Improve visual polish
-3. Add more tile variety
-4. Implement achievements
+---
+## 🧠 How Kiro Impacted Development
 
-### Long-term
-1. Design multiplayer architecture
-2. Implement server state management
-3. Add Redis persistence
-4. Create global leaderboard
-5. Launch to production subreddit
+**Kiro** was instrumental in building FarmRush. It served as an AI pair programmer throughout the whole project — helping me with debugging, design iteration, and game logic generation.
+
+**Initial Code Generation:** The first version of the game logic and tile system was created with Kiro’s help, reducing setup time drastically.
+
+**Debugging Assistance:** During development, Kiro identified performance bottlenecks and Phaser event issues, helping fix critical bugs faster.
+
+**Design & Balancing:** Kiro provided suggestions for regrowth timing, movement balancing, and scalable architecture decisions.
+
+**Workflow Enhancement:** Kiro enabled an iterative approach — instead of spending hours manually testing mechanics, I used Kiro’s steering feedback to guide code adjustments in real time.
+
+**Future Value:** This workflow proved that AI-assisted development can significantly speed up prototyping for Reddit-integrated games. I plan to use Kiro in future Devvit projects for logic scaffolding and balancing systems.
+
+---
 
 ## Conclusion
 
