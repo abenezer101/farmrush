@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "devvit-phaser-starter-experimental",
+  "name": "farmrush1",
   "version": "0.0.0",
   "license": "BSD-3-Clause",
   "type": "module",
@@ -23,8 +23,8 @@
     "type-check": "tsc --build"
   },
   "dependencies": {
-    "@devvit/web": "0.12.0",
-    "devvit": "0.12.0",
+    "@devvit/web": "0.12.1",
+    "devvit": "0.12.1",
     "express": "5.1.0",
     "phaser": "3.88.2"
   },

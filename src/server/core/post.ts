@@ -8,20 +8,16 @@ export const createPost = async () => {
 
   return await reddit.submitCustomPost({
     splash: {
-      // Splash screen customization
-      appDisplayName: '<% name %>',
-      backgroundUri: 'default-splash.png',
-      buttonLabel: 'Start Playing',
-      description: 'An exciting interactive experience',
-      entryUri: 'index.html',
-      heading: 'Welcome to the Game!',
-      appIconUri: 'default-icon.png',
+      appDisplayName: 'FarmRush',
+      buttonLabel: 'Play FarmRush',
+      description: 'Harvest crops and collect corn in this fun farming game!',
+      heading: '🚜 Welcome to FarmRush! 🌽',
     },
     postData: {
       gameState: 'initial',
       score: 0,
     },
     subredditName: subredditName,
-    title: '<% name %>',
+    title: 'FarmRush - Harvest the Farm!',
   });
 };

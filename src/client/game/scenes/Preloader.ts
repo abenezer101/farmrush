@@ -6,34 +6,53 @@ export class Preloader extends Scene {
   }
 
   init() {
-    //  We loaded this image in our Boot Scene, so we can display it here
-    this.add.image(512, 384, 'background');
+    const { width, height } = this.scale;
+    
+    // Background - solid color during loading
+    this.add.rectangle(width / 2, height / 2, width, height, 0x2d5016);
+    
+    // Loading text with farm theme
+    this.add.text(width / 2, height / 2 - 50, '🚜 Loading FarmRush... 🌽', {
+      fontFamily: '"Luckiest Guy", "Baloo Bhai 2", cursive',
+      fontSize: '36px',
+      color: '#FFD85B',
+      stroke: '#8C4A00',
+      strokeThickness: 5,
+      shadow: {
+        offsetX: 2,
+        offsetY: 2,
+        color: '#5B2E00',
+        blur: 2,
+        fill: true,
+      },
+    }).setOrigin(0.5);
 
-    //  A simple progress bar. This is the outline of the bar.
-    this.add.rectangle(512, 384, 468, 32).setStrokeStyle(1, 0xffffff);
+    // Progress bar outline with rounded corners
+    const outline = this.add.graphics();
+    outline.lineStyle(3, 0xFFD700, 1);
+    outline.strokeRoundedRect(width / 2 - 160, height / 2 + 10, 320, 32, 8);
 
-    //  This is the progress bar itself. It will increase in size from the left based on the % of progress.
-    const bar = this.add.rectangle(512 - 230, 384, 4, 28, 0xffffff);
+    // Progress bar background
+    const barBg = this.add.graphics();
+    barBg.fillStyle(0x654321, 1);
+    barBg.fillRoundedRect(width / 2 - 158, height / 2 + 12, 316, 28, 6);
 
-    //  Use the 'progress' event emitted by the LoaderPlugin to update the loading bar
+    // Progress bar fill
+    const bar = this.add.rectangle(width / 2 - 158, height / 2 + 26, 4, 24, 0x8BC34A);
+    bar.setOrigin(0, 0.5);
+
     this.load.on('progress', (progress: number) => {
-      //  Update the progress bar (our bar is 464px wide, so 100% = 464px)
-      bar.width = 4 + 460 * progress;
+      bar.width = 4 + 308 * progress;
     });
   }
 
   preload() {
-    //  Load the assets for the game - Replace with your own assets
-    this.load.setPath('assets');
-
-    this.load.image('logo', 'logo.png');
+    // Load game assets
+    this.load.image('tractor', 'assets/tractor.png');
+    this.load.image('background', 'assets/bg.png');
   }
 
   create() {
-    //  When all the assets have loaded, it's often worth creating global objects here that the rest of the game can use.
-    //  For example, you can define global animations here, so we can use them in other scenes.
-
-    //  Move to the MainMenu. You could also swap this for a Scene Transition, such as a camera fade.
-    this.scene.start('MainMenu');
+    this.scene.start('SplashScreen');
   }
 }
