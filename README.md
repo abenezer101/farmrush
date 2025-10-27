@@ -2,7 +2,7 @@
 
 A real-time multiplayer farming game built with **Phaser.js** and **Devvit Web**. Compete with other players on a massive shared farm to harvest the most corn within 60 seconds! Drive your tractor, outmaneuver opponents, and climb the leaderboard.
 
-![Gameplay](assets/tractor.png)
+![Gameplay](assets/gameplay.gif)
 
 ## 🎮 Game Overview
 
